@@ -2,12 +2,12 @@
 set -e
 
 WORKDIR="$(mktemp -d)"
-SERVERS=(223.5.5.5 220.189.127.107)
+SERVERS=(223.5.5.5)
 # Others: 223.6.6.6 119.28.28.28
 # Not using best possible CDN pop: 1.2.4.8 210.2.4.8
 # Broken?: 180.76.76.76
 
-CONF_WITH_SERVERS=(accelerated-domains.china google.china apple.china)
+CONF_WITH_SERVERS=(accelerated-domains.china)
 CONF_SIMPLE=(bogus-nxdomain.china)
 
 echo "Downloading latest configurations..."
